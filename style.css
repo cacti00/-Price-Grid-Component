@@ -1,0 +1,157 @@
+:root {
+    --clr-primary-200:  hsl(179, 62%, 43%);
+    --clr-primary-400:   hsl(71, 73%, 54%);
+
+    --clr-neutral-100:  hsl(204, 43%, 93%);
+    --clr-neutral-150:   hsl(218, 22%, 67%);
+
+    --fw-primary: 700;
+    --fw-neutral: 400;
+
+    --ff-primary: 'Roboto', sans-serif ;
+
+    --fs-primary: 1em;
+}
+
+.clr-light-grey {
+    color: var(--clr-neutral-100);
+}
+
+
+.clr-green {
+    color: var(--clr-primary-200);
+}
+
+.clr-bright-yellow {
+    color: var(--clr-primary-400);
+}
+
+.clr-grayish-blue{
+    max-width: 34rem;
+    color: var(--clr-neutral-150);
+}
+
+
+
+.bg-dark-green {
+    padding: 1.5em;
+    background-color: var(--clr-primary-200);
+            }
+
+
+.bg-dark-green h1,h2,h3,p {
+    color: var(--clr-neutral-100);
+}
+
+
+.bg-light-green {
+    padding: 1.5em;
+    background-color:var(--clr-primary-200);
+    opacity: 0.8;
+}
+
+.bg-light-green p {
+    color: var(--clr-neutral-100);
+    font-size: 13px;
+}
+
+.bg-white {
+    padding: 1.5em;
+    background-color: white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0.5em 0;
+    font-weight: var(--fw-primary)
+}
+
+p {
+    font-weight: var(--fw-neutral)
+}
+
+
+section {
+    max-width: 100%;
+}
+
+body {
+    font-size: var(--fs-primary);
+    font-family: var(--ff-primary);
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center; 
+    background-color: var(--clr-neutral-100); ;
+    
+}
+
+.split {
+    display: grid;
+}
+
+@media (min-width:40em) {
+    .split {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body {
+        align-items: center;
+    }
+}
+
+
+
+.wrapper {
+    padding: 3em 0;
+    width: min(90%, 70rem);
+}
+
+.container {
+    padding: 3em 2em;
+}
+
+.signbtn {
+    background-color: var(--clr-primary-400) ;
+    border: none;
+    border-radius: 3px;
+    color: var(--clr-neutral-100);
+    padding: 12px 80px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.signbtn:hover {
+    opacity: 0.8;
+}
+
+.span {
+    font-size: 13px;
+    color: var(--clr-neutral-150);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
